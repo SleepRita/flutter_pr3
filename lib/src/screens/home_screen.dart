@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profile_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -70,7 +71,10 @@ class _HomeScreenState extends State<HomeScreen> {
               spacing: 10,
               runSpacing: 10,
               children: [
-
+                OutlinedButton(
+                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileScreen())),
+                  child: const Text('Профиль'),
+                ),
               ],
             ),
           ],
