@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'about_screen.dart';
+import 'gallery_screen.dart';
 import 'profile_screen.dart';
 import 'settings_screen.dart';
 
@@ -76,6 +77,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 OutlinedButton(
                   onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfileScreen())),
                   child: const Text('Профиль'),
+                ),
+                OutlinedButton(
+                  onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const GalleryScreen())),
+                  child: const Text('Галерея'),
                 ),
                 OutlinedButton(
                   onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsScreen())),
